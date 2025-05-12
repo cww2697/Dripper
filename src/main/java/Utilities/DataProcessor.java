@@ -97,10 +97,6 @@ public class DataProcessor {
 
         itemValue = itemName.text().trim();
 
-        if (itemValue.contains("0.53 Credit")) {
-            boolean test = true;
-        }
-
         if (isTotal) {
             itemValue = itemValue.substring(1);
         }
@@ -113,9 +109,6 @@ public class DataProcessor {
         Date date = sdf.parse(cellValues.get(0));
         String itemName = cellValues.get(1);
         String type = cellValues.get(2);
-        if (cellValues.size() == 3) {
-            boolean test = true;
-        }
         double itemValue = Double.parseDouble(cellValues.get(3));
         Boolean isRefund = type.toLowerCase().contains("refund");
 
