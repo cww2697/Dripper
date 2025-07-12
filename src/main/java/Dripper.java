@@ -18,6 +18,5 @@ public class Dripper {
 
         Element table = getHtmlTableFromFile(filePath);
         ArrayList<Transaction> transactions = DataProcessor.getTransactionsFromHTML(table);
-        Boolean test = true;
     }
 }
